@@ -27,9 +27,9 @@ public class Main {
             }
             // Check if the input is divisible by any odd number from 3 to the square root of n. If it is, then it is not a prime number
             boolean prime = false;
-            for (int i = 3; i <= Math.sqrt(isItPrime); i = i + 2) {
+            for (int i = 2; i <=Math.sqrt(isItPrime); i++) {
                 if (isItPrime % i == 0) {
-                    System.out.println(isItPrime + " is not a prime number");
+                    System.out.println(isItPrime + " is not a prime number, it is divisible by "+i);
                     prime = true;
                     break;
                 }
